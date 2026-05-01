@@ -1,0 +1,104 @@
+.footer {
+  background: var(--dark);
+  border-top: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.top {
+  padding: 50px 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logoImg {
+  width: 70px;
+  height: auto;
+}
+
+.brandName {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+
+.brandSub {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 2px;
+}
+
+.links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gray);
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: var(--gold);
+}
+
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px 24px;
+}
+
+.bottom .container {
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.legal {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--gray);
+  font-weight: 300;
+}
+
+.oab {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  color: rgba(136, 136, 136, 0.6);
+  font-weight: 300;
+}
+
+@media (max-width: 700px) {
+  .top .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+}
